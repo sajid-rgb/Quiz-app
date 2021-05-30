@@ -29,8 +29,8 @@ const Timer = () => {
         return (()=>clearInterval(interval.current))
     })
     return (
-        <div style={{fontSize:'30px',marginLeft:'20px'}}>
-            {formatTime(minute)}:{formatTime(second)}
+        <div style={{fontSize:'30px',marginLeft:'40px'}}>
+            <h4 className="mt-5 text-light ml-5">{formatTime(minute)}:{formatTime(second)}</h4>
             {
                 isFinshed && alert("Time Finished")
             }
